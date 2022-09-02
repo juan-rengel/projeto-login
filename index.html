@@ -7,6 +7,7 @@
     <title>Projeto login</title>
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <main>
@@ -15,12 +16,21 @@
                 <!--aui vai a imagem nas css-->
             </div>
             <div id="form">
-                <h2>login</h2>
+                <h1>login</h1>
                 <p>
                     Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configuraçoes no seu ambiente.
 
                     <form action="cadastro-php" method="post">
-
+                        <div class="campo">
+                            <span class="material-symbols-outlined">person</span>
+                            <input type="email" name="email" id="iemail" placeholder="seu email" autocomplete="email" minlength="5" maxlength="15"><label for="iemail"></label>
+                        </div>
+                        <div class="campo">
+                            <span class="material-symbols-outlined">vpn_key</span>
+                            <input type="password" name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password" required minlength="6" maxlength="12"><label for="ienha"></label>
+                        </div>
+                        <input id="sub" type="submit" value="Entrar">
+                        <a href="#">Esqueci a senha<span class="material-symbols-outlined">vpn_key</span> </a>
                     </form>
                 </p>
             </div>
